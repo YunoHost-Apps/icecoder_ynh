@@ -17,7 +17,7 @@
     "requirements": {
         "yunohost": ">= 4.1.3"
     },
-    "multi_instance": true,
+    "multi_instance": false,
     "services": [
         "nginx",
         "php7.3-fpm"
@@ -32,8 +32,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/example",
-                "default": "/example"
+                "example": "/icecoder",
+                "default": "/icecoder"
             },
             {
                 "name": "is_public",
