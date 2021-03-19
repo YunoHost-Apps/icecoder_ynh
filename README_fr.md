@@ -13,13 +13,6 @@ Un éditeur de code dans votre navigateur.
 
 **Version incluse:** last version
 
-## Captures
-
-![screen-1.png](Screen 1)
-![screen-2.png](Screen 2)
-![screen-3.png](Screen 3)
-
-
 ## Démo
 
 * [http://demo.icecoder.net/ICEcoder/](Lien vers le site de démo de cette app.)
