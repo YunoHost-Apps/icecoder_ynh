@@ -138,10 +138,11 @@ ynh_script_progression --message="Upgrading PHP-FPM configuration..." --time --w
 ynh_add_fpm_config
 
 #=================================================
-# SPECIFIC UPGRADE
+# UPGRADE DEPENDENCIES
 #=================================================
-# ...
-#=================================================
+ynh_script_progression --message="Upgrading dependencies..." --time --weight=1
+
+ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
 # UPDATE A CONFIG FILE
