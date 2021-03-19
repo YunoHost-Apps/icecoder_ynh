@@ -122,13 +122,6 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..." -
 ynh_add_nginx_config
 
 #=================================================
-# UPGRADE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Upgrading dependencies..." --time --weight=1
-
-ynh_install_app_dependencies $pkg_dependencies
-
-#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Making sure dedicated system user exists..." --time --weight=1
@@ -149,14 +142,6 @@ ynh_add_fpm_config
 #=================================================
 # ...
 #=================================================
-
-#=================================================
-# SETUP SYSTEMD
-#=================================================
-ynh_script_progression --message="Upgrading systemd configuration..." --time --weight=1
-
-# Create a dedicated systemd config
-ynh_add_systemd_config
 
 #=================================================
 # UPDATE A CONFIG FILE
@@ -192,20 +177,6 @@ ynh_script_progression --message="Upgrading logrotate configuration..." --time -
 
 # Use logrotate to manage app-specific logfile(s)
 ynh_use_logrotate --non-append
-
-#=================================================
-# INTEGRATE SERVICE IN YUNOHOST
-#=================================================
-ynh_script_progression --message="Integrating service in YunoHost..." --time --weight=1
-
-yunohost service add $app --description="A short description of the app" --log="/var/log/$app/$app.log"
-
-#=================================================
-# START SYSTEMD SERVICE
-#=================================================
-ynh_script_progression --message="Starting a systemd service..." --time --weight=1
-
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # UPGRADE FAIL2BAN
