@@ -40,6 +40,6 @@
                 "type": "boolean",
                 "default": true
             },
-        ]
+        ],
     }
 }
