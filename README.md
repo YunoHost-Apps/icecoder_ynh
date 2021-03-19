@@ -15,7 +15,7 @@ A code editor in your browser.
 
 ## Demo
 
-* [http://demo.icecoder.net/ICEcoder/](Link to a demo site for this app.)
+http://demo.icecoder.net/ICEcoder/
 
 ## Configuration
 
