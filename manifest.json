@@ -8,7 +8,7 @@
     },
     "version": "1.0~ynh1",
     "url": "https://icecoder.net",
-    "license": "free",
+    "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Stylix58",
         "email": "lateman-jpeg@outlook.fr",
