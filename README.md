@@ -13,13 +13,6 @@ A code editor in your browser.
 
 **Shipped version:** last version
 
-## Screenshots
-
-![screen-1.png](Screen 1)
-![screen-2.png](Screen 2)
-![screen-3.png](Screen 3)
-
-
 ## Demo
 
 * [http://demo.icecoder.net/ICEcoder/](Link to a demo site for this app.)
