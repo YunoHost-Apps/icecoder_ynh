@@ -3,16 +3,16 @@
     "id": "icecoder",
     "packaging_format": 1,
     "description": {
-        "en": "Un éditeur de code impressionnant ...dans votre navigateur",
-        "fr": "Code editor awesomeness ...in your browser"
+        "en": "Code editor awesomeness ...in your browser",
+        "fr": "Un éditeur de code impressionnant ...dans votre navigateur"
     },
     "version": "1.0~ynh1",
-    "url": "https://icecoder.net",
+    "url": "https://icecoder.net/",
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Stylix58",
         "email": "lateman-jpeg@outlook.fr",
-        "url": "https://stylix58.netlify.app"
+        "url": "https://stylix58.netlify.app/"
     },
     "requirements": {
         "yunohost": ">= 4.1.3"
@@ -39,7 +39,7 @@
                 "name": "is_public",
                 "type": "boolean",
                 "default": true
-            }
+            },
         ]
     }
 }
