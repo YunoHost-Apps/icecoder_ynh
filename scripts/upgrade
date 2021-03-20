@@ -138,13 +138,6 @@ ynh_script_progression --message="Upgrading PHP-FPM configuration..." --time --w
 ynh_add_fpm_config
 
 #=================================================
-# UPGRADE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Upgrading dependencies..." --time --weight=1
-
-ynh_install_app_dependencies $pkg_dependencies
-
-#=================================================
 # UPDATE A CONFIG FILE
 #=================================================
 
@@ -186,6 +179,9 @@ ynh_use_logrotate --non-append
 
 # Create a dedicated Fail2Ban config
 #ynh_add_fail2ban_config --logpath="/var/log/nginx/${domain}-error.log" --failregex="Regex to match into the log for a failed login"
+
+# Configure internal permissions for ICEcoder
+chown -R www-data.www-data $final_path
 
 #=================================================
 # RELOAD NGINX
