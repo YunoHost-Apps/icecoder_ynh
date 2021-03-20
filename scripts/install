@@ -201,7 +201,7 @@ ynh_permission_update --permission="main" --remove="visitors"
 ###
 ### Check the documentation of `ynh_add_config` for more info.
 
-ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
+#ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
 
 ### For more complex cases where you want to replace stuff using regexes,
 ### you shoud rely on ynh_replace_string (which is basically a wrapper for sed)
