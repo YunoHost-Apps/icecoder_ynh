@@ -11,7 +11,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 ## Overview
 A code editor in your browser.
 
-**Shipped version:** last version
+**Shipped version:** 8.0
 
 ## Demo
 
@@ -46,6 +46,7 @@ Can the app be used by multiple users? Yes (It is internal to the app).
 ## Additional information
 
 * You need to configure others things like password **directly** in the app.
+* You **REALLY NEED** to make the installation path is in the root (yes, but you can't with other solution!)!
 
 ## Links
 
