@@ -58,7 +58,7 @@ Comment configurer cette app: Depuis l'écran des options d'ICEcoder
 
 ## Informations pour les développeurs
 
-Merci de faire vos pull request sur la [branche testing](https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing).
+Merci de faire vos pull request sur la [branche testing](https://github.com/YunoHost-Apps/icecoder_ynh/tree/testing).
 
 Pour essayer la branche testing, procédez comme suit.
 ```
