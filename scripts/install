@@ -242,7 +242,7 @@ ynh_permission_update --permission="main" --add="visitors"
 ynh_permission_create --permission="api" --url "/api" --allowed="visitors" --show_tile="false" --protected="true"
 
 # Configure internal permissions for ICEcoder
-sudo chown -R www-data.www-data $final_path
+chown -R www-data.www-data $final_path
 
 #=================================================
 # RELOAD NGINX
