@@ -32,8 +32,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/icecoder",
-                "default": "/icecoder"
+                "example": "/",
+                "default": "/"
             },
             {
                 "name": "is_public",
