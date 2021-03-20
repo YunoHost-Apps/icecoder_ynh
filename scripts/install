@@ -220,9 +220,6 @@ ynh_permission_update --permission="main" --remove="visitors"
 ### Then, if write authorization is needed, any access should be given only to directories
 ### that really need such authorization.
 
-# Set permissions to app files
-chown -R root: $final_path
-
 #=================================================
 # SETUP LOGROTATE
 #=================================================
