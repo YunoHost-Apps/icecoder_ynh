@@ -1,0 +1,6 @@
+SOURCE_URL=https://github.com/icecoder/ICEcoder/archive/refs/tags/8.0.zip
+SOURCE_SUM=48bbae8fad19b5c2956e096446da45bea3e014ec449b1b904d648b4612092429
+SOURCE_SUM_PRG=/usr/bin/sha256sum
+SOURCE_FORMAT=zip
+SOURCE_IN_SUBDIR=true
+SOURCE_EXTRACT=true
