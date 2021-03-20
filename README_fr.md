@@ -40,12 +40,13 @@ Comment configurer cette app: Depuis l'écran des options d'ICEcoder
 
 ## Limitations
 
-* Vous devez définir vous-même le chemin vers le site web que vous voulez éditer.
 * Si le dossier actuel de l'éditeur se trouve là où se trouve l'éditeur, le dossier de l'éditeur est visible dans l'arbre des fichiers.
 
 ## Informations additionnelles
 
-* Vous devez configurer d'autres éléments comme le mot de passe **directement** dans l'application.
+* Vous devrez définir vous-même le chemin vers le site web que vous voulez éditer.
+* Vous devrez configurer d'autres éléments comme le mot de passe **directement** dans l'application.
+* Vous aurez **VRAIMENT BESOIN** de faire en sorte que le chemin d'installation soit à la racine (oui, mais vous ne pouvez pas avec une autre solution !)!
 
 ## Liens
 
