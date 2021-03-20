@@ -29,7 +29,7 @@ db_name=$(ynh_app_setting_get --app=$app --key=db_name)
 
 ### This helper will compare the version of the currently installed app and the version of the upstream package.
 ### $upgrade_type can have 2 different values
-### - UPGRADE_APP if the upstream app version has changed
+### - UPGRADEsome_config_file_APP if the upstream app version has changed
 ### - UPGRADE_PACKAGE if only the YunoHost package has changed
 ### ynh_check_app_version_changed will stop the upgrade if the app is up to date.
 ### UPGRADE_APP should be used to upgrade the core app only if there's an upgrade to do.
@@ -153,7 +153,7 @@ ynh_install_app_dependencies $pkg_dependencies
 ### The file will automatically be backed-up if it's found to be manually modified (because
 ### ynh_add_config keeps track of the file's checksum)
 
-ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
+#ynh_add_config --template="some_config_file" --destination="$final_path/some_config_file"
 
 ### For more complex cases where you want to replace stuff using regexes,
 ### you shoud rely on ynh_replace_string (which is basically a wrapper for sed)
