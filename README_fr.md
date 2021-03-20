@@ -1,4 +1,4 @@
-# ICEcoder
+# ICEcoder pour YunoHost
 
 [![Niveau d'intégration](https://dash.yunohost.org/integration/icecoder.svg)](https://dash.yunohost.org/appci/app/icecoder) ![](https://ci-apps.yunohost.org/ci/badges/icecoder.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/icecoder.maintain.svg)  
 [![Installer ICEcoder avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecoder)
@@ -11,7 +11,7 @@ Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install
 ## Vue d'ensemble
 Un éditeur de code dans votre navigateur.
 
-**Version incluse:** last version
+**Version incluse :** 8.0
 
 ## Démo
 
@@ -58,7 +58,6 @@ Comment configurer cette app: Depuis l'écran des options d'ICEcoder
 
 ## Informations pour les développeurs
 
-**Seulement si vous voulez utiliser une branche de test pour le codage, au lieu de fusionner directement dans la banche principale.**
 Merci de faire vos pull request sur la [branche testing](https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing).
 
 Pour essayer la branche testing, procédez comme suit.
