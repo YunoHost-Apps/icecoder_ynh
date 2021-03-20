@@ -242,7 +242,7 @@ ynh_script_progression --message="Configuring permissions..." --weight=1
 #ynh_permission_create --permission="api" --url "/api" --allowed="visitors" --show_tile="false" --protected="true"
 
 # Configure internal permissions for ICEcoder
-chown -R www-data.www-data $final_path
+chown -R my_webapp $final_path
 
 #=================================================
 # RELOAD NGINX
