@@ -40,13 +40,13 @@ Can the app be used by multiple users? Yes (It is internal to the app).
 
 ## Limitations
 
-* You need to set youself the path to the website who you want edit.
 * If the editor's current folder is where the editor is, the editor's folder is visible in the file tree.
 
 ## Additional information
 
-* You need to configure others things like password **directly** in the app.
-* You **REALLY NEED** to make the installation path is in the root (yes, but you can't with other solution!)!
+* You will need to set youself the path to the website who you want edit.
+* You will need to configure others things like password **directly** in the app.
+* You will **REALLY NEED** to make the installation path is in the root (yes, but you can't with other solution!)!
 
 ## Links
 
