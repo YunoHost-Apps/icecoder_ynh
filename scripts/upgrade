@@ -161,8 +161,6 @@ ynh_add_fpm_config
 # SECURE FILES AND DIRECTORIES
 #=================================================
 
-# Set permissions on app files
-chown -R root: $final_path
 
 #=================================================
 # SETUP LOGROTATE
