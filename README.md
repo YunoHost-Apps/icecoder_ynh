@@ -1,4 +1,4 @@
-# ICEcoder
+# ICEcoder for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/icecoder.svg)](https://dash.yunohost.org/appci/app/icecoder) ![](https://ci-apps.yunohost.org/ci/badges/icecoder.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/icecoder.maintain.svg)  
 [![Install ICEcoder with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=icecoder)
@@ -30,8 +30,8 @@ How to configure this app: From ICEcoder options screen.
 
 #### Multi-user support
 
-Are LDAP and HTTP auth supported? No.
-Can the app be used by multiple users? Yes (It is internal to the app).
+ * Are LDAP and HTTP auth supported? No.
+ * Can the app be used by multiple users? Yes (It is internal to the app).
 
 #### Supported architectures
 
@@ -46,6 +46,7 @@ Can the app be used by multiple users? Yes (It is internal to the app).
 
 * You will need to set youself the path to the website who you want edit.
 * You will need to configure others things like password **directly** in the app.
+* If you change the URL of this app, you don't change the real URL but the internal path (the process is the same as installation).
 
 ## Links
 
@@ -58,7 +59,6 @@ Can the app be used by multiple users? Yes (It is internal to the app).
 
 ## Developer info
 
-**Only if you want to use a testing branch for coding, instead of merging directly into master.**
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/icecoder_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
