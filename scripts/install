@@ -53,7 +53,7 @@ ynh_script_progression --message="Validating installation parameters..." --weigh
 final_path=$path_url
 test ! -e "$final_path" || ynh_die --message="This path already contains a folder"
 
-if not [[ $path_url =~ my_webapp ]]
+if ! [[ $path_url =~ my_webapp ]]
 then
    $path_url=$YNH_APP_ARG_PATH
 fi
