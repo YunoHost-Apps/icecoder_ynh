@@ -57,7 +57,7 @@ if [[ $path_url =~ my_webapp ]]
 then
    $path_url=$(ynh_app_setting_get --app=my_webapp --key=path_url)
    $path_url=$(path_url%=*)
-   $path_url=$path_url/icecoder
+   $path_url=$(($path_url+/icecoder))
 else
    $path_url=$YNH_APP_ARG_PATH
 fi
