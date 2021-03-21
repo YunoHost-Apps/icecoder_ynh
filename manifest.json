@@ -38,11 +38,6 @@
                 },
                 "example": "/var/www/my_webapp/www",
                 "default": "/var/www/my_webapp/www"
-            },
-            {
-                "name": "is_public",
-                "type": "boolean",
-                "default": true
             }
         ]
     }
