@@ -6,7 +6,7 @@
         "en": "Code editor awesomeness ...in your browser",
         "fr": "Un éditeur de code impressionnant ...dans votre navigateur"
     },
-    "version": "1.1~ynh1",
+    "version": "1.1~ynh3",
     "url": "https://icecoder.net/",
     "license": "AGPL-3.0-only",
     "maintainer": {
