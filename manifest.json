@@ -33,11 +33,11 @@
                 "name": "path",
                 "type": "path",
                 "help": {
-                    "en": "Choose the internal path for this app (We recommand to set it to the internal path of a Custom Webapp) (The final path will be: path + icecoder).",
-                    "fr": "Choisissez le chemin interne de cette application (nous vous recommandons de le définir sur le chemin interne d'une Custom Webapp) (Le chemin final sera : chemin + icecoder)."
+                    "en": "Choose the internal path for this app (We recommand to set it to the internal path of a Custom Webapp).",
+                    "fr": "Choisissez le chemin interne de cette application (nous vous recommandons de le définir sur le chemin interne d'une Custom Webapp)."
                 },
-                "example": "/var/www/my_webapp/www",
-                "default": "/var/www/my_webapp/www"
+                "example": "/var/www/my_webapp/www/icecoder",
+                "default": "/var/www/my_webapp/www/icecoder"
             }
         ]
     }
