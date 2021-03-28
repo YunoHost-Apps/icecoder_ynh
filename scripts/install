@@ -106,7 +106,7 @@ ynh_script_progression --message="Configuring log rotation..." --weight=1
 ynh_use_logrotate
 
 #=================================================
-# SETUP SSOWAT
+# SETUP PERMISSIONS
 #=================================================
 ynh_script_progression --message="Configuring permissions..." --weight=1
 
