@@ -113,7 +113,6 @@ ynh_script_progression --message="Configuring permissions..." --weight=1
 if [[ $path_url =~ my_webapp ]]
 then
    chown -R my_webapp $final_path
-   echo "pass"
 else
    chown -R www-data.www-data $final_path
 fi
