@@ -58,8 +58,12 @@ ynh_restore_file --origin_path="$final_path"
 # RESTORE USER RIGHTS
 #=================================================
 
-# Configure internal permissions for ICEcoder
-chown -R my_webapp $final_path
+if [[ $path_url =~ my_webapp ]]
+then
+   chown -R my_webapp $final_path
+else
+   chown -R www-data.www-data $final_path
+fi
 
 #=================================================
 # RESTORE THE LOGROTATE CONFIGURATION

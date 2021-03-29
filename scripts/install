@@ -55,15 +55,7 @@ final_path=$path_url
 test ! -e "$final_path" || ynh_die --message="This path already contains a folder"
 
 # Register (book) web path
-if [[ $path_url =~ my_webapp ]]
-then
-   mkdir $YNH_APP_ARG_PATH
-   ynh_webpath_register --app=$app --domain=$domain --path_url=$YNH_APP_ARG_PATH
-   chown -R my_webapp $final_path
-else
-   ynh_webpath_register --app=$app --domain=$domain --path_url=$path_url
-   chown -R www-data.www-data $final_path
-fi
+ynh_webpath_register --app=$app --domain=$domain --path_url=$path_url
 
 
 #=================================================
@@ -114,10 +106,16 @@ ynh_script_progression --message="Configuring log rotation..." --weight=1
 ynh_use_logrotate
 
 #=================================================
-# SETUP SSOWAT
+# SETUP PERMISSIONS
 #=================================================
 ynh_script_progression --message="Configuring permissions..." --weight=1
 
+if [[ $path_url =~ my_webapp ]]
+then
+   chown -R my_webapp $final_path
+else
+   chown -R www-data.www-data $final_path
+fi
 
 #=================================================
 # END OF SCRIPT
