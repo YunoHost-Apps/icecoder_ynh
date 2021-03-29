@@ -31,10 +31,10 @@
             },
             {
                 "name": "app_id",
-                "type": "string",
+                "type": "app",
                 "ask": {
-                    "en": "Indicate a Custom Webapp ID",
-                    "fr": "Indiquez une ID de Custom Webapp"
+                    "en": "Choose a Custom Webapp",
+                    "fr": "Choisissez une Custom Webapp"
                 }
             }
         ]
