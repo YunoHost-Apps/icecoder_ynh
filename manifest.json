@@ -33,8 +33,8 @@
                 "name": "app_id",
                 "type": "app",
                 "ask": {
-                    "en": "Choose a webapp",
-                    "fr": "Choisissez une webapp"
+                    "en": "Indicate a Custom Webapp ID",
+                    "fr": "Indiquez une ID de Custom Webapp"
                 }
             }
         ]
