@@ -21,9 +21,7 @@ ynh_abort_if_errors
 #=================================================
 
 domain=$YNH_APP_ARG_DOMAIN
-path_url=$YNH_APP_ARG_PATH
-internal_path=`echo $YNH_APP_ARG_INTERNAL_PATH "/icecoder"`
-
+path_url=`echo "/" `ynh_app_setting_get --app=$YNH_APP_ARG_APP_ID --key=path` "/icecoder"`
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
 ### The id of the app as stated in the manifest is available as $YNH_APP_ID
@@ -52,12 +50,11 @@ ynh_script_progression --message="Validating installation parameters..." --weigh
 
 ### If the app uses NGINX as web server (written in HTML/PHP in most cases), the final path should be "/var/www/$app".
 ### If the app provides an internal web server (or uses another application server such as uWSGI), the final path should be "/opt/yunohost/$app"
-final_path=$path_url
+final_path=/var/www/$YNH_APP_ARG_APP_ID/icecoder
 test ! -e "$final_path" || ynh_die --message="This path already contains a folder"
 
 # Register (book) web path
 ynh_webpath_register --app=$app --domain=$domain --path_url=$path_url
-
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
@@ -78,7 +75,16 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$internal_path"
+ynh_setup_source --dest_dir="$final_path"
+
+#=================================================
+# SPECIFIC SETUP
+#=================================================
+
+# Change config (ban editor's folder)
+php -f "../conf/config.php"
+
+#=================================================
 
 #=================================================
 # GENERIC FINALIZATION
@@ -89,6 +95,9 @@ ynh_setup_source --dest_dir="$internal_path"
 ### For security reason, any app should set the permissions to root: before anything else.
 ### Then, if write authorization is needed, any access should be given only to directories
 ### that really need such authorization.
+
+# Set permissions to app files
+chown -R $YNH_APP_ARG_APP_ID $final_path
 
 #=================================================
 # SETUP LOGROTATE
@@ -107,16 +116,37 @@ ynh_script_progression --message="Configuring log rotation..." --weight=1
 ynh_use_logrotate
 
 #=================================================
-# SETUP PERMISSIONS
+# INTEGRATE SERVICE IN YUNOHOST
 #=================================================
-ynh_script_progression --message="Configuring permissions..." --weight=1
+ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
 
-if [[ $internal_path =~ my_webapp ]]
-then
-   chown -R my_webapp $internal_path
-else
-   chown -R www-data.www-data $internal_path
-fi
+### `yunohost service add` integrates a service in YunoHost. It then gets
+### displayed in the admin interface and through the others `yunohost service` commands.
+### (N.B.: this line only makes sense if the app adds a service to the system!)
+### If you're not using these lines:
+###		- You can remove these files in conf/.
+###		- Remove the section "REMOVE SERVICE INTEGRATION IN YUNOHOST" in the remove script
+###		- As well as the section "INTEGRATE SERVICE IN YUNOHOST" in the restore script
+###		- And the section "INTEGRATE SERVICE IN YUNOHOST" in the upgrade script
+
+yunohost service add $app --description="ICEcoder logs" --log="/var/log/$app/$app.log"
+
+### Additional options starting with 3.8:
+###
+### --needs_exposed_ports "$port" a list of ports that needs to be publicly exposed
+###                               which will then be checked by YunoHost's diagnosis system
+###                               (N.B. DO NOT USE THIS is the port is only internal!!!)
+###
+### --test_status "some command"  a custom command to check the status of the service
+###                               (only relevant if 'systemctl status' doesn't do a good job)
+###
+### --test_conf "some command"    some command similar to "nginx -t" that validates the conf of the service
+###
+### Re-calling 'yunohost service add' during the upgrade script is the right way
+### to proceed if you later realize that you need to enable some flags that
+### weren't enabled on old installs (be careful it'll override the existing
+### service though so you should re-provide all relevant flags when doing so)
+
 
 #=================================================
 # END OF SCRIPT
