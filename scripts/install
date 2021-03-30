@@ -22,7 +22,8 @@ ynh_abort_if_errors
 
 domain=$YNH_APP_ARG_DOMAIN
 app_id=$YNH_APP_ARG_APP_ID
-path_url=`ynh_app_setting_get -a $YNH_APP_ARG_APP_ID -k path`/icecoder
+path_url=""
+#`ynh_app_setting_get -a $YNH_APP_ARG_APP_ID -k path`/icecoder
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
 ### The id of the app as stated in the manifest is available as $YNH_APP_ID
@@ -58,7 +59,7 @@ test -e "/var/www/$YNH_APP_ARG_APP_ID" || ynh_die --message="You don't have inst
 test ! -e "$final_path" || ynh_die --message="This path already contains a folder"
 
 # Register (book) web path
-ynh_webpath_register --app=$app --domain=$domain --path_url="In $app_id's 'icecoder' folder"
+ynh_webpath_register --app=$app --domain=$domain --path_url=$path_url
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
