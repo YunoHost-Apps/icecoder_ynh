@@ -44,8 +44,7 @@ How to configure this app: From ICEcoder options screen.
 
 ## Additional information
 
-* You will need to set youself the path to the website who you want edit.
-* You will need to configure others things like password **directly** in the app.
+* You will need to configure things like password **directly** in the app.
 * If you change the URL of this app, you don't change the real URL but the internal path (the process is the same as installation).
 
 ## Links
