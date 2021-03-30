@@ -22,8 +22,7 @@ ynh_abort_if_errors
 
 domain=$YNH_APP_ARG_DOMAIN
 app_id=$YNH_APP_ARG_APP_ID
-path_url=""
-#`ynh_app_setting_get -a $YNH_APP_ARG_APP_ID -k path`/icecoder
+path_url="/in-$app_id-folder"
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
 ### The id of the app as stated in the manifest is available as $YNH_APP_ID
