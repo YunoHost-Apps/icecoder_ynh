@@ -34,7 +34,7 @@ app_id=$(ynh_app_setting_get --app=$app --key=app_id)
 #=================================================
 ynh_script_progression --message="Validating restoration parameters..." --weight=1
 
-test -e "/var/www/$YNH_APP_ARG_APP_ID/icecoder" || ynh_die --message="You have already restored a app instance here before restore this app instance!"
+test ! -e "/var/www/$YNH_APP_ARG_APP_ID/icecoder" || ynh_die --message="You have already restored a app instance here before restore this app instance!"
 test -e "/var/www/$YNH_APP_ARG_APP_ID" || ynh_die --message="You don't have installed a webapp before restore this app!"
 
 ynh_webpath_available --domain=$domain --path_url=$path_url \
