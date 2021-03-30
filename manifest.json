@@ -31,10 +31,10 @@
             },
             {
                 "name": "app_id",
-                "type": "app",
+                "type": "string",
                 "ask": {
-                    "en": "Choose a Custom Webapp",
-                    "fr": "Choisissez une Custom Webapp"
+                    "en": "Indicate the ID of the Custom Webapp where you want to install this app",
+                    "fr": "Indiquez l'ID de la Custom Webapp dans laquelle vous voulez installer cette app"
                 }
             }
         ]
