@@ -44,8 +44,7 @@ Comment configurer cette app: Depuis l'écran des options d'ICEcoder
 
 ## Informations additionnelles
 
-* Vous devrez définir vous-même le chemin vers le site web que vous voulez éditer.
-* Vous devrez configurer d'autres éléments comme le mot de passe **directement** dans l'application.
+* Vous devrez configurer des éléments comme le mot de passe **directement** dans l'application.
 * Si vous changez l'URL de cette application, vous ne changez pas l'URL réelle mais le chemin interne (le processus est le même que pour l'installation).
 
 ## Liens
