@@ -21,8 +21,7 @@ ynh_abort_if_errors
 #=================================================
 
 domain=$YNH_APP_ARG_DOMAIN
-path_url=`ynh_app_setting_get -a $YNH_APP_ARG_APP_ID -k path`
-((path_url=$path_url+"/icecoder"))
+path_url=`ynh_app_setting_get -a $YNH_APP_ARG_APP_ID -k path`/icecoder
 app_id=$YNH_APP_ARG_APP_ID
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
