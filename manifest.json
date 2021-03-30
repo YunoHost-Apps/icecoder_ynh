@@ -35,6 +35,10 @@
                 "ask": {
                     "en": "Indicate the ID of the Custom Webapp where you want to install this app",
                     "fr": "Indiquez l'ID de la Custom Webapp dans laquelle vous voulez installer cette app"
+                },
+                "help": {
+                    "en": "You can get the ID in Custom Webapp's settings.",
+                    "fr": "Vous pouvez obtenir l'ID dans les paramètres de la Webapp personnalisée."
                 }
             }
         ]
