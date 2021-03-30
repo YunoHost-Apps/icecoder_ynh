@@ -27,12 +27,15 @@ app=$YNH_APP_INSTANCE_NAME
 domain=$(ynh_app_setting_get --app=$app --key=domain)
 path_url=$(ynh_app_setting_get --app=$app --key=path)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
-phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+app_id=$(ynh_app_setting_get --app=$app --key=app_id)
 
 #=================================================
 # CHECK IF THE APP CAN BE RESTORED
 #=================================================
 ynh_script_progression --message="Validating restoration parameters..." --weight=1
+
+#test ! -e "/var/www/$YNH_APP_ARG_APP_ID/icecoder" || ynh_die --message="You have already restored a app instance here before restore this app instance!"
+test -e "/var/www/$YNH_APP_ARG_APP_ID" || ynh_die --message="You don't have installed a webapp before restore this app!"
 
 ynh_webpath_available --domain=$domain --path_url=$path_url \
 	|| ynh_die --message="Path not available: ${domain}${path_url}"
@@ -58,18 +61,7 @@ ynh_restore_file --origin_path="$final_path"
 # RESTORE USER RIGHTS
 #=================================================
 
-if [[ $path_url =~ my_webapp ]]
-then
-   chown -R my_webapp $final_path
-else
-   chown -R www-data.www-data $final_path
-fi
-
-#=================================================
-# RESTORE THE LOGROTATE CONFIGURATION
-#=================================================
-
-ynh_restore_file --origin_path="/etc/logrotate.d/$app"
+chown -R $app_id $final_path
 
 #=================================================
 # END OF SCRIPT
