@@ -1,12 +1,9 @@
 ;; Test complet
+	; pre-install
+		sudo yunohost app install my_webapp -f -a domain=domain.tld0&path=/site&with_sftp=1&password="myreallystrengthpassword"&is_public=1&with_mysql=1
 	; Manifest
 		domain="domain.tld"	(DOMAIN)
 		path="/path"	(PATH)
-		admin="john"	(USER)
-		language="fr"
-		is_public=1	(PUBLIC|public=1|private=0)
-		password="pass"
-		port="666"	(PORT)
 	; Checks
 		pkg_linter=1
 		setup_sub_dir=1
@@ -66,4 +63,4 @@ Notification=none
 ;;; Upgrade options
 	; commit=65c382d138596fcb32b4c97c39398815a1dcd4e8
 		name=Name of this previous version
-		manifest_arg=domain=DOMAIN&path=PATH&admin=USER&password=pass&is_public=1&
+		manifest_arg=domain=DOMAIN&path=PATH&
