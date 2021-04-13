@@ -31,8 +31,7 @@ Notification=none
 ;; Default test serie
 # Comment ignored
 	; pre-install
-		echo -n "Here your commands to execute in the container"
-		echo ", before each installation of the app."
+		sudo yunohost app install my_webapp -a domain="domain.tld"&path="/site"&admin="john"&language=fr&is_public=1&password=pass&port=666
 	; Manifest
         # You need to provide default values for installation parameters ...
         # EXCEPT for special args: domain, path, admin, and is_public 
