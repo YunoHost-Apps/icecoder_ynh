@@ -6,13 +6,12 @@
         "en": "Code editor awesomeness ...in your browser",
         "fr": "Un éditeur de code impressionnant ...dans votre navigateur"
     },
-    "version": "2.0.0~ynh1",
-    "url": "https://icecoder.net/",
+    "version": "2.0.1~ynh1",
+    "url": "https://icecoder.net",
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Stylix58",
-        "email": "lateman-jpeg@outlook.fr",
-        "url": "https://stylix58.netlify.app/"
+        "email": "lateman-jpeg@outlook.fr"
     },
     "requirements": {
         "yunohost": ">= 4.1.3"
@@ -25,11 +24,6 @@
     "arguments": {
         "install" : [
             {
-                "name": "domain",
-                "type": "domain",
-                "example": "example.com"
-            },
-            {
                 "name": "app_id",
                 "type": "string",
                 "ask": {
@@ -38,7 +32,7 @@
                 },
                 "help": {
                     "en": "You can get the ID in Custom Webapp's settings.",
-                    "fr": "Vous pouvez obtenir l'ID dans les paramètres de la Webapp personnalisée."
+                    "fr": "Vous pouvez obtenir l'ID dans les paramètres de la Custom Webapp."
                 }
             }
         ]
