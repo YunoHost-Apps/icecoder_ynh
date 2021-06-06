@@ -22,6 +22,7 @@ ynh_abort_if_errors
 
 app_id=$YNH_APP_ARG_APP_ID
 path_url="/in-$app_id-folder"
+domain=none.ynh.fr
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
 ### The id of the app as stated in the manifest is available as $YNH_APP_ID
