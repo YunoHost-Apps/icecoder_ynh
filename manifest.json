@@ -3,8 +3,8 @@
     "id": "icecoder",
     "packaging_format": 1,
     "description": {
-        "en": "Code editor awesomeness ...in your browser",
-        "fr": "Un éditeur de code impressionnant ...dans votre navigateur"
+        "en": "Code editor awesomeness... in your browser",
+        "fr": "Un éditeur de code impressionnant... dans votre navigateur"
     },
     "version": "2.0.1~ynh1",
     "url": "https://icecoder.net",
