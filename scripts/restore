@@ -26,7 +26,7 @@ app=$YNH_APP_INSTANCE_NAME
 
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 app_id=$(ynh_app_setting_get --app=$app --key=app_id)
-sub_path=$(ynh_app_setting_get --app=$app --key=sub_path)
+sub_folder=$(ynh_app_setting_get --app=$app --key=sub_folder)
 
 #=================================================
 # CHECK IF THE APP CAN BE RESTORED

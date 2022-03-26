@@ -43,10 +43,10 @@
                 }
             },
             {
-                "name": "sub_path",
+                "name": "sub_folder",
                 "type": "path",
                 "ask": {
-                    "en": "Indicate the name of the final_path subfolder containing the files accessible from your browser ",
+                    "en": "Indicate the name of the final_path subfolder containing the files accessible from your browser",
                     "fr": "Indiquer le nom du sous-dossier du final_path contenant les fichiers accessibles depuis votre navigateur"
                 },
                 "help": {

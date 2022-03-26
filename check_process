@@ -3,7 +3,7 @@
 		sudo yunohost app install my_webapp -a "domain=domain.tld&path=/path&with_sftp=1&password=myreallystrengthpassword&is_public=1&phpversion=7.3&with_mysql=1"
 	; Manifest
 		app_id="my_webapp"
-		sub_path="/www"
+		sub_folder="/www"
 		path="/icecoder"
 	; Checks
 		pkg_linter=1
