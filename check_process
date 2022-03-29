@@ -1,18 +1,24 @@
 ;; Test complet
 	; pre-install
-		sudo yunohost app install my_webapp -a domain=domain.tld&path=/site&admin=john&is_public=1&password=pass
+		sudo yunohost app install my_webapp -a "domain=domain.tld&path=/path&with_sftp=1&password=myreallystrengthpassword&is_public=1&phpversion=7.3&with_mysql=1"
 	; Manifest
-		domain="domain.tld"	(DOMAIN)
-		app_id="my_webapp"	(APP_ID)
+		app_id="my_webapp"
+		sub_folder="/www"
+		domain="domain.tld"
+		path="/icecoder"
 	; Checks
 		pkg_linter=1
-		setup_sub_dir=0
-		setup_root=1
+		setup_sub_dir=1
+		setup_root=0
 		setup_nourl=0
 		setup_private=0
 		setup_public=0
 		upgrade=1
+		# upgrade=1	from_commit=CommitHash
 		backup_restore=1
 		multi_instance=0
 		port_already_use=0
 		change_url=1
+;;; Options
+Email=
+Notification=none
