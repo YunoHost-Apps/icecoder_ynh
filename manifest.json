@@ -31,7 +31,7 @@
     "arguments": {
         "install": [
             {
-                "name": "app_id",
+                "name": "custom_webapp_id",
                 "type": "string",
                 "ask": {
                     "en": "Indicate the ID of the Custom Webapp where you want to install this app",

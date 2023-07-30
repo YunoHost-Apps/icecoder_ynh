@@ -16,7 +16,7 @@ ynh_script_progression --message="Loading installation settings..."
 
 app=$YNH_APP_INSTANCE_NAME
 
-app_id=$(ynh_app_setting_get --app=$app --key=app_id)
+custom_webapp_id=$(ynh_app_setting_get --app=$app --key=custom_webapp_id)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 
 #=================================================
@@ -59,7 +59,7 @@ fi
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
-chown -R $app_id:www-data "$final_path"
+chown -R $custom_webapp_id:www-data "$final_path"
 
 #=================================================
 # GENERIC FINALIZATION
