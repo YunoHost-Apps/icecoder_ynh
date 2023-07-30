@@ -1,6 +1,6 @@
 ;; Test complet
 	; pre-install
-		sudo yunohost app install my_webapp -a "domain=domain.tld&path=/path&with_sftp=1&password=myreallystrengthpassword&init_main_permission=visitors&phpversion=7.4&with_mysql=1"
+		sudo yunohost app install my_webapp --force -a "domain=domain.tld&path=/path&with_sftp=1&password=myreallystrengthpassword&init_main_permission=visitors&phpversion=7.4&with_mysql=1"
 	; Manifest
 		app_id="my_webapp"
 		sub_folder="/www"
