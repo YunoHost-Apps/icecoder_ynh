@@ -38,7 +38,7 @@ Un éditeur de code dans votre navigateur.
 * Site officiel de l’app : <https://icecoder.net>
 * Documentation officielle de l’admin : <https://icecoder.net/manual>
 * Dépôt de code officiel de l’app : <https://github.com/icecoder/ICEcoder>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_icecoder>
+* YunoHost Store: <https://apps.yunohost.org/app/icecoder>
 * Signaler un bug : <https://github.com/YunoHost-Apps/icecoder_ynh/issues>
 
 ## Informations pour les développeurs

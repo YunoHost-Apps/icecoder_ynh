@@ -39,7 +39,7 @@ A code editor in your browser.
 * Official app website: <https://icecoder.net>
 * Official admin documentation: <https://icecoder.net/manual>
 * Upstream app code repository: <https://github.com/icecoder/ICEcoder>
-* YunoHost documentation for this app: <https://yunohost.org/app_icecoder>
+* YunoHost Store: <https://apps.yunohost.org/app/icecoder>
 * Report a bug: <https://github.com/YunoHost-Apps/icecoder_ynh/issues>
 
 ## Developer info
