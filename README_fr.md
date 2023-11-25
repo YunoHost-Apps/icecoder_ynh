@@ -22,17 +22,6 @@ Un éditeur de code dans votre navigateur.
 **Version incluse :** 8.1~ynh1
 
 **Démo :** http://demo.icecoder.net/ICEcoder/
-## Avertissements / informations importantes
-
-## Limitations
-
-* Si le dossier actuel de l'éditeur se trouve là où se trouve l'éditeur, le dossier de l'éditeur est visible dans l'arbre des fichiers.
-
-## Informations additionnelles
-
-* Vous devrez configurer des éléments comme le mot de passe **directement** dans l'application.
-* Si vous changez l'URL de cette application, vous ne changez pas l'URL réelle mais le chemin interne (le processus est le même que pour l'installation).
-
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://icecoder.net>
