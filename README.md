@@ -21,7 +21,7 @@ Code editor awesomeness... in your browser
 Note that this app is designed to be coupled to my_webapp / Custom webapp to be able to edit its code directly from a web browser.
 
 
-**Shipped version:** 8.1~ynh1
+**Shipped version:** 8.1~ynh2
 
 **Demo:** http://demo.icecoder.net/ICEcoder/
 ## Documentation and resources
