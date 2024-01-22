@@ -1,0 +1,58 @@
+packaging_format = 2
+
+id = "icecoder"
+name = "ICEcoder"
+description.en = "Code editor awesomeness... in your browser"
+description.fr = "Un éditeur de code impressionnant... dans votre navigateur"
+
+version = "8.1~ynh1"
+
+maintainers = ["Stylix58"]
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://icecoder.net"
+demo = "http://demo.icecoder.net/ICEcoder/"
+admindoc = "https://icecoder.net/manual"
+code = "https://github.com/icecoder/ICEcoder"
+
+[integration]
+yunohost = ">= 11.2"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.custom_webapp_id]
+    ask.en = "Indicate the ID of the Custom Webapp where you want to install this app"
+    ask.fr = "Indiquez l'ID de la Custom Webapp dans laquelle vous voulez installer cette app"
+    help.en = "This should be my_webapp, or my_webapp__2, __3, __4 etc if you have several installs of my_webapp."
+    help.fr = "Il s'agit de my_webapp ou my_webapp__2, __3, __4 etc si vous avez plusieurs installations de my_webapp."
+    type = "string"
+
+    [install.sub_folder]
+    ask.en = "Indicate the name of the final_path subfolder containing the files accessible from your browser"
+    ask.fr = "Indiquer le nom du sous-dossier du final_path contenant les fichiers accessibles depuis votre navigateur"
+    help.en = "For example for Custom Webapp it is located in the /www subfolder."
+    help.fr = "Par exemple pour Custom Webapp il se situe dans le sous-dossier /www."
+    type = "path"
+    default = "/www"
+
+[resources]
+        [resources.sources.main]
+        url = "https://github.com/icecoder/ICEcoder/archive/refs/tags/8.1.zip"
+        sha256 = "669aa799cab161334ec108fbaafea97061859622433ad98188ddb19e86285f31"
+
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
