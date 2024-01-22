@@ -33,8 +33,8 @@ ram.runtime = "50M"
     [install.custom_webapp_id]
     ask.en = "Indicate the ID of the Custom Webapp where you want to install this app"
     ask.fr = "Indiquez l'ID de la Custom Webapp dans laquelle vous voulez installer cette app"
-    help.en = "You can get the ID in Custom Webapp's settings."
-    help.fr = "Vous pouvez obtenir l'ID dans les paramètres de la Custom Webapp."
+    help.en = "This should be my_webapp, or my_webapp__2, __3, __4 etc if you have several installs of my_webapp."
+    help.fr = "Il s'agit de my_webapp ou my_webapp__2, __3, __4 etc si vous avez plusieurs installations de my_webapp."
     type = "string"
 
     [install.sub_folder]
