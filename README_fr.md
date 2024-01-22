@@ -16,23 +16,14 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Un éditeur de code dans votre navigateur.
+Un éditeur de code impressionnant... dans votre navigateur
+
+Notez que cette app est conçue pour s'intégrer à my_webapp / custom webapp dans le but de pouvoir éditer le code depuis votre navigateur.
 
 
 **Version incluse :** 8.1~ynh1
 
 **Démo :** http://demo.icecoder.net/ICEcoder/
-## Avertissements / informations importantes
-
-## Limitations
-
-* Si le dossier actuel de l'éditeur se trouve là où se trouve l'éditeur, le dossier de l'éditeur est visible dans l'arbre des fichiers.
-
-## Informations additionnelles
-
-* Vous devrez configurer des éléments comme le mot de passe **directement** dans l'application.
-* Si vous changez l'URL de cette application, vous ne changez pas l'URL réelle mais le chemin interne (le processus est le même que pour l'installation).
-
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://icecoder.net>
