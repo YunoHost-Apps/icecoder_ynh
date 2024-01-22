@@ -16,8 +16,9 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-A code editor in your browser.
+Code editor awesomeness... in your browser
 
+Note that this app is designed to be coupled to my_webapp / Custom webapp
 
 
 **Shipped version:** 8.1~ynh1
