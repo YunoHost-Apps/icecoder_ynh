@@ -5,7 +5,7 @@ name = "ICEcoder"
 description.en = "Code editor awesomeness... in your browser"
 description.fr = "Un éditeur de code impressionnant... dans votre navigateur"
 
-version = "8.1~ynh1"
+version = "8.1~ynh2"
 
 maintainers = ["Stylix58"]
 
