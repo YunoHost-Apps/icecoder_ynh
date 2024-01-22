@@ -21,7 +21,7 @@ Un éditeur de code impressionnant... dans votre navigateur
 Notez que cette app est conçue pour s'intégrer à my_webapp / custom webapp dans le but de pouvoir éditer le code depuis votre navigateur.
 
 
-**Version incluse :** 8.1~ynh1
+**Version incluse :** 8.1~ynh2
 
 **Démo :** http://demo.icecoder.net/ICEcoder/
 ## Documentations et ressources
