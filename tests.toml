@@ -5,3 +5,5 @@ test_format = 1.0
     preinstall = """
     sudo yunohost app install my_webapp --force -a "domain=domain.tld&path=/path&with_sftp=1&password=myreallystrengthpassword&init_main_permission=visitors&phpversion=8.2&database=none"
     """
+
+    args.custom_webapp_id = "my_webapp"
